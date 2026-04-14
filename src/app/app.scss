@@ -1,0 +1,222 @@
+@use 'styles/variables' as *;
+@use 'styles/typography' as *;
+
+.app-container {
+  margin: 48px 112px 80px;
+}
+
+header {
+  margin-top: 64px;
+}
+
+.search-section {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  max-height: 56px;
+
+  input {
+    @include text-preset-5;
+
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-neutral-0);
+    border: none;
+    outline: none;
+    appearance: none;
+    padding: 16px 24px;
+    background-color: var(--color-neutral-800);
+    border-radius: var(--radius-12);
+    min-width: 500px;
+    cursor: pointer;
+
+    &::placeholder {
+      color: var(--color-neutral-0);
+    }
+
+
+    &:hover {
+      background-color: var(--color-neutral-700);
+    }
+
+    &:focus {
+      background-color: var(--color-neutral-800);
+
+    }
+
+  }
+
+  button {
+    @include text-preset-5;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--color-blue-500);
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius-12);
+    border: none;
+    outline: none;
+    appearance: none;
+    color: var(--color-neutral-0);
+
+    &:hover {
+      background-color: var(--color-blue-700);
+    }
+
+    &:focus {
+      background-color: var(--color-blue-500);
+    }
+  }
+}
+
+header {
+  text-align: center;
+  font-family: ''
+}
+
+.content-container {
+  margin-top: 48px;
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+
+.left-container {
+  width: 65%;
+}
+
+.right-container {
+  width: 31%;
+}
+
+.hero-section {
+  background-image: url('/assets/images/bg-today-large.svg');
+  background-size: cover;
+  aspect-ratio: 800 / 286; // mantém a proporção exata do SVG
+  border-radius: 20px; // o SVG tem rx="20"
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+
+  div {
+    background-color: transparent;
+  }
+
+  h2, h3, h4 {
+    background-color: transparent;
+  }
+
+  h2 {
+    @include text-preset-1;
+  }
+
+  h3 {
+    @include text-preset-4;
+  }
+
+  h4 {
+    @include text-preset-5;
+  }
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.temperature-container {
+  display: flex;
+
+  img {
+    max-width: 120px;
+  }
+}
+
+.weather-details-container {
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+}
+
+.weather-container-item {
+  width: 182px;
+  height: 118px;
+  border-radius: var(--radius-12);
+  background-color: var(--color-neutral-800);
+  border: 1px solid var(--color-neutral-600);
+  padding: 20px;
+
+  .label {
+    @include text-preset-6;
+  }
+
+  .value {
+    @include text-preset-3;
+    margin-top: 24px;
+  }
+}
+
+.hourly-forecast-container {
+  background-color: var(--color-neutral-800);
+  height: 100%;
+  padding: 24px;
+
+  div, p {
+    background-color: transparent;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.daily-forecast-container {
+  margin-top: 48px;
+}
+
+.daily-forecast {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+
+  img {
+    margin-top: 16px;
+  }
+
+}
+
+.daily-forecast-item {
+  width: 100.57px;
+  height: 165px;
+  padding: 16px;
+  background-color: var(--color-neutral-800);
+  border: 1px solid var(--color-neutral-600);
+  border-radius: var(--radius-12);
+
+  img {
+    max-width: 60px;
+  }
+
+  .temperature-range {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+}
+
+.text-preset-5 {
+  @include text-preset-5;
+}
+
+.center {
+  text-align: center;
+}

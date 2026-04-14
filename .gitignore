@@ -42,3 +42,11 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+.env
+.env.local
+.env*.local
+
+.idea
+
+.vscode
