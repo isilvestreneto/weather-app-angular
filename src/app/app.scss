@@ -91,7 +91,7 @@ header {
 }
 
 .hero-section {
-  background-image: url('/assets/images/bg-today-large.svg');
+  background-image: url('../../public/assets/images/bg-today-large.svg');
   background-size: cover;
   aspect-ratio: 800 / 286; // mantém a proporção exata do SVG
   border-radius: 20px; // o SVG tem rx="20"
