@@ -3,13 +3,13 @@
 
 @font-face {
   font-family: 'Bricolage Grotesque';
-  src: url('/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf')
+  src: url('../public/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf')
   format('truetype');
 }
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('/assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+  src: url('../public/assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
 *, *:before, *:after{
