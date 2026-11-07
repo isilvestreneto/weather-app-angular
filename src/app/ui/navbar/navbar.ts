@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,16 +9,15 @@ import { Component, input } from '@angular/core';
         <img src="assets/images/logo.svg" alt="logo" />
       </div>
       <div id="select">
-        <select >
-            <option>
-                Units
-            </option>
+        <select>
+          <option>Units</option>
           Units Switch to Imperial/Metric Temperature Celsius (°C) Fahrenheit (°F) Wind Speed km/h
           mph Precipitation Millimeters (mm) Inches (in)
         </select>
       </div>
     </div>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './navbar.scss',
 })
 export class Navbar {

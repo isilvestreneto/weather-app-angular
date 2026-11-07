@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { Navbar } from './ui/navbar/navbar';
 import { Footer } from './ui/footer/footer';
 
@@ -6,6 +6,7 @@ import { Footer } from './ui/footer/footer';
   selector: 'app-root',
   imports: [Navbar, Footer],
   templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.scss',
 })
 export class App {
